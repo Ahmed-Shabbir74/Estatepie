@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="https://kit.fontawesome.com/5b5131ab8e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-secblue"  >
+         <div class="w-11/12 mx-auto ">
+            <!-- margin both side  -->
+            <div class="flex items-center justify-between border-b-2 border-gray-400 w-11/12 clg:w-full clg:flex fixed clg:static top-0  z-10 bg-secblue ">
+                <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Navbar @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+                <img src="./assets/imgs/Group 273.svg" alt="logo" class="w-32">
+                <ul class="homeul hidden clg:flex  gap-10 ">
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px]"><a
+                            href="homepage.html">Home</a></li>
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px]"><a
+                            href="plan.html">Plans</a></li>
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px]"><a
+                            href="#">Help</a></li>
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px]"><a
+                            href="#">Contacts</a></li>
+                </ul>
+                <div>
+
+                </div>
+                <ul class=" gap-8 logoutul hidden clg:flex">
+                    <li class="home hover:underline decoration-8 decoration-blue  hover:underline-offset-[15px] underline underline-offset-[15px]"><a
+                            href="postinglist.html">Posting List</a></li>
+                    <li><a href="#">login</a></li>
+                    <li class="bg-terablue box-content px-2 rounded-lg py-1 font-semibold text-blue text-sm "><a href="#">Signup  <i class="ml-1 fa-solid fa-caret-down bg-white rounded-full px-1"></i></a></li>
+
+                </ul>
+                <button class="text-black  clg:hidden" onclick="togglesidebar()"><i
+                    class="fa-solid fa-bars fa-xl"></i></button>
+
+
+            </div>
+                <h1 class="font-bold text-4xl text-blue  pt-20 pb-10 clg:py-10  ">Create Listing</h1>
+        
+            
+         </div>
+        </div>
+
+        
+        
+        <div class="w-11/12 mx-auto">
+            <form action="alllisting.html">
+                <div class="xl:flex gap-8">
+                <div>
+                <div>
+                    <label for="property" class="block py-4 text-xl">Estate / Property Name</label>
+                    <input type="text" name="proper" id="property" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Estate / Property / Name">
+                </div>
+                <div>
+                    <label for="propertytype" class="block py-4 text-xl">Property Type</label>
+                    <input type="text"  id="propertytype" class="bg-terblue w-full xl:w-[35.125rem]  p-4 outline-none rounded-lg" placeholder="Bungalow">
+                </div>
+                <div>
+                    <label for="sale" class="block py-4 text-xl">For Sale / For Rent</label>
+                    <input type="text"  id="sale" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="For Sale / For Rent">
+                </div>
+                <div>
+                    <label for="Amenities" class="block py-4 text-xl">Amenities</label>
+                    <input type="text"  id="Amenities" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Select an Option">
+                </div>
+                <div>
+                    <label for="Size" class="block py-4 text-xl">Size / Area</label>
+                    <input type="text"  id="Size" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Enter Size / Area">
+                </div>
+                <div>
+                    <label for="Broker" class="block py-4 text-xl">Broker</label>
+                    <input type="text"  id="Broker" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Yes">
+                </div>
+                <div>
+                    <label for="Smoking" class="block py-4 text-xl">Smoking</label>
+                    <input type="text"  id="Smoking" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Yes">
+                </div>
+            </div>
+
+
+            <div>
+                <div>
+                    <label for="Category" class="block py-4 text-xl">Category</label>
+                    <input type="text"  id="Category" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Select Category">
+                </div>
+                <div>
+                    <label for="Beds" class="block py-4 text-xl">No of Beds</label>
+                    <input type="text"  id="Beds" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Select No Of Bedrooms">
+                </div>
+                <div>
+                    <label for="Lease" class="block py-4 text-xl">Lease Duration(Months)</label>
+                    <input type="text"  id="Lease" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Lease Duration">
+                </div>
+                <div>
+                    <label for="Unit" class="block py-4 text-xl">Unit</label>
+                    <input type="text"  id="Unit" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Yards">
+                </div>
+                <div>
+                    <label for="Price" class="block py-4 text-xl">Price</label>
+                    <input type="text"  id="Price" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Enter Price">
+                </div>
+                <div>
+                    <label for="Fees" class="block py-4 text-xl">Fees</label>
+                    <input type="text"  id="Fees" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Yes">
+                </div>
+                <div>
+                    <label for="Pets" class="block py-4 text-xl">Pets</label>
+                    <input type="text"  id="Pets" class="bg-terblue w-full xl:w-[35.125rem] p-4 outline-none rounded-lg" placeholder="Yes">
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for="Baths" class="block py-4 text-xl">No of Baths</label>
+            <input type="text"  id="Baths" class="bg-terblue w-full p-4 outline-none rounded-lg" placeholder="Yes">
+        </div>
+        <div>
+            <label for="photo" class="block py-4 text-xl">Upload photo of location</label>
+            <input type="file"   accept="image/*" id="photo" class="bg-terblue w-6/12 p-4 outline-none rounded-lg">
+        </div>
+        <div>
+            <label for="Address" class="block py-4 text-xl">Address</label>
+            <input type="text"  id="Address" class="bg-terblue w-full p-4 outline-none rounded-lg" placeholder="Enter a Location">
+        </div>
+        <div>
+            <label for="Description" class="block py-4 text-xl">Description</label>
+            <input type="text"  id="Description" class="bg-terblue w-full p-4 outline-none rounded-lg pb-24" placeholder="Add some addtional notes,if any">
+        </div>
+        <div>
+            <label for="leaseterm" class="block py-4 text-xl">Lease Terms</label>
+            <input type="text"  id="leaseterm" class="bg-terblue w-full p-4 outline-none rounded-lg pb-24" placeholder="Add some addtional notes,if any">
+        </div>
+        <div class="my-6 flex gap-10">
+
+       
+        <div class="flex items-center gap-4 ">
+        <div class="w-[30px] h-[30px] bg-terblue"></div>
+        <h1>Multiple Unit Available</h1>
+        </div>
+        <div class="flex items-center gap-4">
+
+            <div class="w-[30px] h-[30px] bg-terblue"></div>
+            <h1>Is Available</h1>
+            </div>
+
+        </div>
+        <div class="w-64 mx-auto">
+
+            <input type="submit" value="Post" class="bg-secblue rounded-lg text-blue font-bold cursor-pointer px-20 py-4 my-4  ">
+        </div>
+    
+
+            </form>
+            
+        </div>
+   
+
+
+
+
+
+
+        <footer class=" bg-blue">
+            <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ footer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+            <div class="pt-10 w-11/12 mx-auto text-white pb-8 flex justify-between flex-wrap gap-4">
+                <span>
+
+                    <img src="./assets/imgs/footerlogo.svg" alt="Logo" class="w-48">
+                    <h1 class="text-2xl font-semibold mb-2">The Place To List</h1>
+                    <img src="./assets/imgs/facebook.svg" alt="" class="w-8 inline mr-2 cursor-pointer ">
+                    <img src="./assets/imgs/twitter.svg" alt="" class="w-8 inline mr-2 cursor-pointer">
+                    <i class="fa-brands fa-instagram rounded-full p-2 outline outline-1 mr-2 cursor-pointer"></i>
+                    <img src="./assets/imgs/p.svg" alt="" class="w-8 inline cursor-pointer">
+                    
+                </span>
+                <span>
+                    <img src="./assets/imgs/googleplay.png" alt="" class="w-28 inline mr-4">
+                    <img src="./assets/imgs/appstore.png" alt="" class="w-28 inline ">
+                    <h1 class="mt-4 text-lg">Terms & Conditions Privacy Policy</h1>
+                    <p class="mt-2 text-slate-500">Copyright © 2024 EstatePie LLC</p>
+
+
+                </span>
+
+            </div>
+        </footer>
+        
+</body>
+
+</html>

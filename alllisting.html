@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="https://kit.fontawesome.com/5b5131ab8e.js" crossorigin="anonymous"></script>
+</head>
+<body class="2xl:max-w-screen-2xl  2xl:mx-auto">
+    <div class=" bg-[length:250px_280px] sm:bg-[length:320px_280px] md:bg-[length:380px_350px] bg-no-repeat bg-right-bottom w-auto h-[70vh] bg-secblue" style="background-image: url(./assets/imgs/backgroundlist.png);">
+        <div class="w-11/12 mx-auto ">
+            <!-- margin both side  -->
+            <div class=" flex items-center justify-between border-b-2 border-gray-400">
+                <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Navbar @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+                <img src="./assets/imgs/Group 273.svg" alt="logo" class="w-32">
+                <ul class="flex gap-8">
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[15px]"><a
+                            href="postinglist.html">Posting List</a></li>
+                    <li class="bg-terablue box-content px-2 rounded-lg py-1 font-semibold text-blue text-sm "><a href="homepage.html">Get Started</a></li>
+
+                </ul>
+
+            </div>
+            <div class="text-blue mt-16 ">
+                <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ center text @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+                <button class="clg:hidden py-2 bg-terablue font-semibold px-10 rounded-lg mr-2" onclick="showdetails()">Details</button>
+                <div class="hidden deta clg:grid grid-cols-9 p-2 gap-4 w-10/12 rounded-lg bg-white mb-10 ">
+                   
+                    <div class="bg-secblue col-span-2 rounded-md text-center  px-1 py-2">
+                        <h1 class="text-lg font-semibold">Buy</h1>
+                        <span class="flex justify-end items-center gap-x-2">
+                            <i class="fa-solid fa-angle-down justify-self-end self-end fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow"></i>
+                        </span>
+                    </div>
+                    <div class=" bg-secblue col-span-3 rounded-md px-1">
+                        <!-- <h1 class="text-lg font-semibold">Location</h1> -->
+                        <input type="text" class="w-full h-10 placeholder:text-black placeholder:text-top  bg-secblue outline-none font-semibold" placeholder="Location">
+                    </div>
+                    <div class="bg-secblue col-span-2 rounded-md px-1 ">
+                        <h1 class="text-lg font-semibold">Property Type</h1>
+                        <span class="flex justify-between items-center gap-x-2">
+                            <h1 class="text-md font-semibold">Homes</h1>
+                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="document.querySelector('.dropdownP').classList.toggle('hidden');"></i>
+                        </span>
+                    </div>
+                    <div class="bg-secblue col-span-2 rounded-md px-1">
+                        <h1 class="text-lg font-semibold">Area</h1>
+                        <span class="flex justify-between items-center gap-x-2">
+                            <h1 class="text-md font-semibold">0</h1>
+                            <h1 class="text-md font-semibold">To Any</h1>
+                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="fun()"></i>
+                        </span>
+                        
+                       
+                    </div>
+                    <div class="bg-secblue col-span-3 rounded-md px-1">
+                        <h1 class="text-lg font-semibold">Price</h1>
+                        <span class="flex justify-between items-center gap-x-2">
+                            <h1 class="text-md font-semibold">0</h1>
+                            <h1 class="text-md font-semibold">To Any</h1>
+                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="document.querySelector('.dropdown').classList.toggle('hidden');"></i>
+                        </span>
+                       
+                    </div>
+                    <div class="bg-secblue rounded-md px-1">
+                        <h1 class="text-lg font-semibold">BEDS</h1>
+                        <span class="flex justify-between items-center gap-x-2">
+                            <h1 class="text-md font-semibold">All</h1>
+                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="document.querySelector('.dropdownB').classList.toggle('hidden');"></i>
+                        </span>
+                       
+                    </div>
+                    <div class="bg-secblue rounded-md px-1">
+                        <h1 class="text-lg font-semibold">BATHS</h1>
+                        <span class="flex justify-between items-center gap-x-2">
+                            <h1 class="text-md font-semibold">All</h1>
+                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="fun1()"></i>
+                        </span>
+                      
+                    </div>
+                    <div class="bg-secblue col-span-2 rounded-md px-1">
+                        <h1 class="text-lg font-semibold">KEYWORD</h1>
+                    </div>
+                    <div class="bg-secblue col-span-2 rounded-md px-1">
+                        <h1 class="text-lg font-semibold">MORE OPTIONS</h1>
+                        <span class="flex justify-between items-center gap-x-2">
+                            <h1 class="text-md font-semibold">0 Selected</h1>
+                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow"></i>
+                        </span>
+                    </div>
+                 </div>
+                
+
+                <button class="py-2 bg-terablue font-semibold px-10 rounded-lg mr-2" onclick="window.location.href='alllisting.html'">All Listing</button>
+                <button class="py-2 bg-terblue font-semibold px-10 rounded-lg" onclick="window.location.href='featuredlisting.html'">Featured Listing</button>
+            </div>
+        
+        </div>
+        </div>
+
+        <div class="w-11/12 mx-auto mb-10">
+            <h1 class="font-semibold text-4xl text-blue my-4">All Listing</h1>
+
+            <div class="grid grid-cols-1  sm:grid-cols-2  md:grid-cols-3 gap-4">
+                <!--@@@@@@@@@@@@@@@@@@ grid div @@@@@@@@@@@@@@@@@@@@@@@@@@-->
+                 <div class="bg-terblue p-2 text-blue ">
+                    <div class="relative">
+                        <button class="bg-yellow-400  px-4 rounded-l-xl absolute top-8 right-0">Featured</button>
+                        <img src="./assets/imgs/h1.png" alt="house image">
+                        <i class="fa-solid fa-heart st absolute bottom-4 right-28 bg-terablue text-white px-2 py-[8px] rounded cursor-pointer" onclick="document.querySelector('.st').classList.toggle('text-cyan-900');"></i>
+                        <button class="bg-white py-1 px-2 rounded-md absolute right-4 bottom-4">1 Year Ago</button>
+
+                    </div>
+                   
+
+                    <h1 class="text-xl font-semibold">Testing Commerical store</h1>
+                    <h1 class="text-lg font-semibold"> <span class="text-xl font-bold"> $100 /</span> Sale</h1>
+                    <p class="font-semibold mb-1"> <i class="fa-solid fa-location-dot bg-white py-1 px-2 rounded" ></i> TH. 7 FL,3R Block 3 gulshan-e-Iqbal.</p>
+                    <ul class="flex flex-wrap gap-2 mb-2">
+                        <li class="border-r-2 px-2"><i class="fa-solid fa-bed"></i> 4 Beds</li>
+                        <li class="border-r-2 px-2"><i class="fa-solid fa-bath"></i> 3 Baths</li>
+                        <li><i class="fa-solid fa-chart-area"></i> Area 50 sq.Ft</li>
+                    </ul>
+                    <button class="bg-blue text-white px-2 py-1 rounded-lg"><i class="fa-solid fa-phone  text-blue bg-white rounded-full p-1"></i> Call</button>
+                    <button class="bg-terablue  px-2 py-1 rounded-lg"><i class="fa-solid fa-message  text-white bg-blue rounded-full p-[5px]"></i> Chat</button>
+                    <button class="bg-white px-2 py-1 rounded-lg "><i class="fa-brands fa-square-whatsapp text-white bg-blue rounded-full p-[5px]"></i> WhatsApp</button>
+                </div>
+                 <div class="bg-terblue p-2 text-blue ">
+                    <div class="relative">
+                        <button class="bg-yellow-400  px-4 rounded-l-xl absolute top-8 right-0">Featured</button>
+                        <img src="./assets/imgs/h2.png" alt="house image">
+                        <i class="fa-solid fa-heart nd absolute bottom-4 right-28 bg-terablue text-white px-2 py-[8px] rounded cursor-pointer" onclick="document.querySelector('.nd').classList.toggle('text-cyan-900');"></i>
+                        <button class="bg-white py-1 px-2 rounded-md absolute right-4 bottom-4">1 Year Ago</button>
+
+                    </div>
+                    <h1 class="text-xl font-semibold">Testing Commerical store</h1>
+                    <h1 class="text-lg font-semibold"> <span class="text-xl font-bold"> $100 /</span> Sale</h1>
+                    <p class="font-semibold mb-1"> <i class="fa-solid fa-location-dot bg-white py-1 px-2 rounded" ></i> TH. 7 FL,3R Block 3 gulshan-e-Iqbal.</p>
+                    <ul class="flex flex-wrap gap-2 mb-2">
+                        <li class="border-r-2 px-2"><i class="fa-solid fa-bed"></i> 4 Beds</li>
+                        <li class="border-r-2 px-2"><i class="fa-solid fa-bath"></i> 3 Baths</li>
+                        <li><i class="fa-solid fa-chart-area"></i> Area 50 sq.Ft</li>
+                    </ul>
+                    <button class="bg-blue text-white px-2 py-1 rounded-lg"><i class="fa-solid fa-phone  text-blue bg-white rounded-full p-1"></i> Call</button>
+                    <button class="bg-terablue  px-2 py-1 rounded-lg"><i class="fa-solid fa-message  text-white bg-blue rounded-full p-[5px]"></i> Chat</button>
+                    <button class="bg-white px-2 py-1 rounded-lg "><i class="fa-brands fa-square-whatsapp text-white bg-blue rounded-full p-[5px]"></i> WhatsApp</button>
+                </div>
+                 <div class="bg-terblue p-2 text-blue ">
+                    <div class="relative">
+                        <button class="bg-yellow-400  px-4 rounded-l-xl absolute top-8 right-0">Featured</button>
+                        <img src="./assets/imgs/h3.png" alt="house image">
+                        <i class="fa-solid fa-heart rd absolute bottom-4 right-28 bg-terablue text-white px-2 py-[8px] rounded cursor-pointer" onclick="document.querySelector('.rd').classList.toggle('text-cyan-900');"></i>
+                        <button class="bg-white py-1 px-2 rounded-md absolute right-4 bottom-4">1 Year Ago</button>
+
+                    </div>
+                    <h1 class="text-xl font-semibold">Testing Commerical store</h1>
+                    <h1 class="text-lg font-semibold"> <span class="text-xl font-bold"> $100 /</span> Sale</h1>
+                    <p class="font-semibold mb-1"> <i class="fa-solid fa-location-dot bg-white py-1 px-2 rounded" ></i> TH. 7 FL,3R Block 3 gulshan-e-Iqbal.</p>
+                    <ul class="flex flex-wrap gap-2 mb-2">
+                        <li class="border-r-2 px-2"><i class="fa-solid fa-bed"></i> 4 Beds</li>
+                        <li class="border-r-2 px-2"><i class="fa-solid fa-bath"></i> 3 Baths</li>
+                        <li><i class="fa-solid fa-chart-area"></i> Area 50 sq.Ft</li>
+                    </ul>
+                    <button class="bg-blue text-white px-2 py-1 rounded-lg"><i class="fa-solid fa-phone  text-blue bg-white rounded-full p-1"></i> Call</button>
+                    <button class="bg-terablue  px-2 py-1 rounded-lg"><i class="fa-solid fa-message  text-white bg-blue rounded-full p-[5px]"></i> Chat</button>
+                    <button class="bg-white px-2 py-1 rounded-lg "><i class="fa-brands fa-square-whatsapp text-white bg-blue rounded-full p-[5px]"></i> WhatsApp</button>
+                  
+                </div>
+            
+            </div>
+    
+        </div>
+        
+        <footer class=" bg-blue">
+            <div class="pt-10 w-11/12 mx-auto text-white pb-8 flex justify-between flex-wrap gap-4">
+                <span>
+
+                    <img src="./assets/imgs/footerlogo.svg" alt="Logo" class="w-48">
+                    <h1 class="text-2xl font-semibold mb-2">The Place To List</h1>
+                    <img src="./assets/imgs/facebook.svg" alt="" class="w-8 inline mr-2 cursor-pointer ">
+                    <img src="./assets/imgs/twitter.svg" alt="" class="w-8 inline mr-2 cursor-pointer">
+                    <i class="fa-brands fa-instagram rounded-full p-2 outline outline-1 mr-2 cursor-pointer"></i>
+                    <img src="./assets/imgs/p.svg" alt="" class="w-8 inline cursor-pointer">
+                    
+                </span>
+                <span>
+                    <img src="./assets/imgs/googleplay.png" alt="" class="w-28 inline mr-4">
+                    <img src="./assets/imgs/appstore.png" alt="" class="w-28 inline ">
+                    <h1 class="mt-4 text-lg">Terms & Conditions Privacy Policy</h1>
+                    <p class="mt-2 text-slate-500">Copyright © 2024 EstatePie LLC</p>
+
+
+                </span>
+
+            </div>
+        </footer>
+        <div class="dropdown absolute top-64 left-20 w-72 bg-white text-center p-4 shadow shadow-slate-300 hidden">
+            <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
+            <h1 class="text-center text-xl font-bold update">Price</h1>
+            <div class="flex items-center justify-between my-2 ">
+              <div class="w-4 h-4 bg-terablue rounded-full"></div>
+              <div class="flex-1 h-2 bg-terablue mx-[1px]"></div>
+              <div class="w-4 h-4 bg-terablue rounded-full"></div>
+            </div>
+            <div class="my-2">
+                <label for="min" class="block text-left my-1 text-lg update">Min Price</label>
+                <input type="text" class="w-full h-8 outline outline-1 p-2" placeholder="Enter Min">
+            </div>
+            <div class="my-2">
+                <label for="max" class="block text-left my-1 text-lg update">Max Price</label>
+                <input type="text" class="w-full h-8 outline outline-1 p-2" placeholder="Enter Max">
+            </div>
+            <button class=" bg-blue text-white px-12 py-2 rounded " onclick="window.location.href='alllisting.html'">Done</button>
+
+  
+        
+     
+    </div>
+
+
+
+    <div class="dropdownB absolute top-64  left-[23.8rem] w-24 bg-white text-center p-4 shadow shadow-slate-300 hidden ">
+        <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
+        <ul>
+            <li class="border-b-2"><a href="#">All</a></li>
+            <li class="border-b-2"><a href="#">Studio</a></li>
+            <li class="border-b-2"><a href="#">1</a></li>
+            <li class="border-b-2"><a href="#">2</a></li>
+            <li class="border-b-2"><a href="#">3</a></li>
+            <li class="border-b-2"><a href="#">4</a></li>
+            <li class="border-b-2"><a href="#">5</a></li>
+            <li class="border-b-2"><a href="#">6</a></li>
+        </ul>
+       
+    </div>
+
+    <div class="dropdownP absolute top-[11.3rem] left-[25.8rem] w-96 bg-white p-2 shadow shadow-slate-600 hidden">
+        <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
+        <div class="grid grid-cols-2 gap-2 gap-y-4 text-center">
+            <div>
+                <button class="rbtn underline  decoration-2 underline-offset-4 decoration-cyan-600 hover:text-black" onclick="fun3()">Residental</button>
+            </div>
+            <div>
+                <button class="cbtn text-gray-500 hover:text-black decoration-cyan-600 decoration-2 underline-offset-4" onclick="fun2()">Commerical</button>
+            </div>
+            <div class="outline outline-1"><h1>Home</h1></div>
+            <div class="outline outline-1"><h1>Flat</h1></div>
+            <div class="outline outline-1"><h1>PentHouse</h1></div>
+            <div class="outline outline-1"><h1>Room</h1></div>
+        </div>
+    </div>
+     
+
+</body>
+
+
+</html>

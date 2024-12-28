@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="https://kit.fontawesome.com/5b5131ab8e.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="2xl:max-w-screen-2xl  2xl:mx-auto">
+    <div class="w-auto h-[50vh] bg-secblue">
+        <div class="w-11/12 mx-auto ">
+            <!-- margin both side  -->
+            <div class=" flex items-center justify-between border-b-2 border-gray-400 fixed clg:inline-flex  w-11/12 z-10 bg-secblue">
+                <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Navbar @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+                <img src="./assets/imgs/Group 273.svg" alt="logo" class="w-32">
+                <ul class="homeul hidden clg:flex  gap-10">
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px] "><a
+                            href="homepage.html">Home</a></li>
+                    <li class="home hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px] underline underline-offset-[14px]"><a
+                            href="plan.html">Plans</a></li>
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px]"><a
+                            href="#">Help</a></li>
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px]"><a
+                            href="#">Contacts</a></li>
+                </ul>
+                <ul class="logoutul hidden clg:flex gap-8 ">
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[15px]"><a
+                            href="postinglist.html">Posting List</a></li>
+                    <li><a href="#">login</a></li>
+                    <li class="bg-terablue box-content px-2 rounded-lg py-1 font-semibold text-blue text-sm "><a href="#">Signup  <i class="ml-1 fa-solid fa-caret-down bg-white rounded-full px-1"></i></a></li>
+
+                </ul>
+                <button class="text-black  clg:hidden" onclick="togglesidebar()"><i
+                    class="fa-solid fa-bars fa-xl"></i></button>
+
+
+            </div>
+            <div class="text-blue absolute top-28 w-11/12 ">
+                <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ center text @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+                 <h1 class="text-3xl csm:text-5xl font-bold">Subscription Plans</h1>
+                 <p class="text-lg csm:text-2xl">Easy Process, Residental And Commerical <br> Properties, Free Listings!</p>
+
+    
+               
+            </div>
+        </div>
+    </div>
+
+        <div class="w-11/12 mx-auto mb-10 text-center mt-8">
+            <button class="py-3 bg-blue text-white font-semibold w-full my-4 csm:w-64 rounded-lg mr-2 block  csm:inline" onclick="window.location.href='plan.html'">Property Management</button>
+            <button class="py-3 bg-terblue font-semibold w-full csm:w-64 rounded-lg block csm:inline" onclick="window.location.href='planlisting.html'">Listings</button>
+
+            <div class="mt-8 grid grid-cols-1  sm:grid-cols-2  md:grid-cols-3 gap-4 text-left">
+                <!--@@@@@@@@@@@@@@@@@@ grid div @@@@@@@@@@@@@@@@@@@@@@@@@@-->
+                 <div class="bg-terblue p-2 text-blue relative text-center">
+                    <h1 class="text-4xl text-left font-bold mb-2">Free</h1>
+                    <div class="flex gap-2 text-left">
+                    <h1 class="inline text-4xl font-bold"> $0 </h1><div class="inline-flex flex-col leading-5"> <h1>Free</h1><h1>Forever</h1></div> </div>
+                    <button class="mt-8 py-2 px-20 rounded-3xl bg-terablue" onclick="window.location.href='plan.html'">Select</button>
+                    <h1 class="mt-2  text-left border-b-2 border-dashed border-gray-400 font-semibold py-4">Basic Features For Up To 2 Rental Properties.</h1>
+                    <div class="text-left mt-2">
+                    <h1 class="font-semibold">Free includes:</h1>
+                    <div class="flex justify-between">
+                        <h1>Web And Mobile App</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Unlimited Tent Management</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Property Management</h1>
+                        <span class=" ">
+                            <i class="fa-solid fa-check"></i> <h1 class="text-red-400 inline">2 Units</h1>
+
+                        </span>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Billing & Payments</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Maintenance Requests</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Automatic Payments</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Invoicing & receipts</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Excel and CSV Date Imports</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Profile</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Photo Gallery</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Free Ads / Listings</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Chat Messaging</h1>
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Message Broadcasts</h1>
+                        <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Incident Reports</h1>
+                        <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Snapshots Only (Dashboard Reports)</h1>
+                        <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Export Reports As PDF or Excel</h1>
+                        <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Automated Reports Delivery</h1>
+                        <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Events Updates</h1>
+                        <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Lease Reminders</h1>
+                        <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1>Snapshot + Insights (Graphical <br> Dashboard Reportd)</h1>
+                        <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="bg-terblue p-2 text-blue relative text-center">
+                <h1 class="text-4xl text-left font-bold mb-2">Standard</h1>
+                <div class="flex gap-2 text-left">
+                <h1 class="inline text-4xl font-bold"> $79.00 </h1><div class="inline-flex flex-col  leading-10"> <h1 class="font-semibold">Month</h1></div> </div>
+                <h1 class="text-left mt-2 font-semibold">$828.00 / Yearly</h1>
+                <button class="mt-8 py-2 px-20 rounded-3xl bg-terablue" onclick="window.location.href='plan.html'">Select</button>
+                <h1 class="mt-2 text-left border-b-2 border-dashed border-gray-400 font-semibold py-4">Manage Up To 500 Rental Properties <br> Using Our Standards Management Features.</h1>
+                <div class="text-left mt-2">
+                <h1 class="font-semibold">Standards includes:</h1>
+                <div class="flex justify-between">
+                    <h1>Web And Mobile App</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Unlimited Tent Management</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Property Management</h1>
+                    <span class=" ">
+                        <i class="fa-solid fa-check"></i> <h1 class="text-red-400 inline">500 Units</h1>
+
+                    </span>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Billing & Payments</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Maintenance Requests</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Automatic Payments</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Invoicing & receipts</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Excel and CSV Date Imports</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Profile</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Photo Gallery</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Free Ads / Listings</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Chat Messaging</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Message Broadcasts</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Incident Reports</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Snapshots Only (Dashboard Reports)</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Export Reports As PDF or Excel</h1>
+                    <i class="fa-solid fa-check"></i>
+                </div>
+              
+                <div class="flex justify-between">
+                    <h1>Events Updates</h1>
+                    <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Lease Reminders</h1>
+                    <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                </div>
+                <div class="flex justify-between">
+                    <h1>Snapshot + Insights (Graphical <br> Dashboard Reportd)</h1>
+                    <i class="fa-regular fa-circle-xmark text-red-400"></i>
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="bg-terblue p-2 text-blue relative text-center">
+            <h1 class="text-4xl text-left font-bold mb-2">Premium</h1>
+            <div class="flex gap-2 text-left">
+            <h1 class="inline text-4xl font-bold"> $99.00 </h1><div class="inline-flex flex-col leading-10"> <h1 class="font-semibold">Month</h1></div> </div>
+            <h1 class="text-left mt-2 font-semibold ">$1068.00 / Yearly</h1>
+            <button class="mt-8 py-2 px-20 rounded-3xl bg-terablue" onclick="window.location.href='plan.html'">Select</button>
+            <h1 class="mt-2  text-left border-b-2 border-dashed border-gray-400 font-semibold py-4">Enjoy Full Access To Managing Unlimited <br> Property Units Or Rentals .</h1>
+            <div class="text-left mt-2">
+            <h1 class="font-semibold">Premium includes:</h1>
+            <div class="flex justify-between">
+                <h1>Web And Mobile App</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Unlimited Tent Management</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Property Management</h1>
+                <span class=" ">
+                    <i class="fa-solid fa-check"></i> <h1 class="text-red-400 inline">Unlimited Units</h1>
+
+                </span>
+            </div>
+            <div class="flex justify-between">
+                <h1>Billing & Payments</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Maintenance Requests</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Automatic Payments</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Invoicing & receipts</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Excel and CSV Date Imports</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Profile</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Photo Gallery</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Free Ads / Listings</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Chat Messaging</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Message Broadcasts</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Incident Reports</h1>
+                 <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Snapshots Only (Dashboard Reports)</h1>
+                 <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Export Reports As PDF or Excel</h1>
+                 <i class="fa-solid fa-check"></i>
+            </div>
+          
+            <div class="flex justify-between">
+                <h1>Events Updates</h1>
+                 <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Lease Reminders</h1>
+                 <i class="fa-solid fa-check"></i>
+            </div>
+            <div class="flex justify-between">
+                <h1>Snapshot + Insights (Graphical <br> Dashboard Reportd)</h1>
+                <i class="fa-solid fa-check"></i>
+            </div>
+            
+
+        </div>
+    </div>
+            </div>
+    
+        </div>
+        
+        <footer class=" bg-blue">
+            <div class="pt-10 w-11/12 mx-auto text-white pb-8 flex justify-between flex-wrap gap-4">
+                <span>
+
+                    <img src="./assets/imgs/footerlogo.svg" alt="Logo" class="w-48">
+                    <h1 class="text-2xl font-semibold mb-2">The Place To List</h1>
+                    <img src="./assets/imgs/facebook.svg" alt="" class="w-8 inline mr-2 cursor-pointer ">
+                    <img src="./assets/imgs/twitter.svg" alt="" class="w-8 inline mr-2 cursor-pointer">
+                    <i class="fa-brands fa-instagram rounded-full p-2 outline outline-1 mr-2 cursor-pointer"></i>
+                    <img src="./assets/imgs/p.svg" alt="" class="w-8 inline cursor-pointer">
+                    
+                </span>
+                <span>
+                    <img src="./assets/imgs/googleplay.png" alt="" class="w-28 inline mr-4">
+                    <img src="./assets/imgs/appstore.png" alt="" class="w-28 inline ">
+                    <h1 class="mt-4 text-lg">Terms & Conditions Privacy Policy</h1>
+                    <p class="mt-2 text-slate-500">Copyright © 2024 EstatePie LLC</p>
+
+
+                </span>
+
+            </div>
+        </footer>
+    
+</body>
+
+</html>

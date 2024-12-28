@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="https://kit.fontawesome.com/5b5131ab8e.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="2xl:max-w-screen-2xl  2xl:mx-auto">
+    <div class="w-auto h-[50vh] bg-secblue">
+        <div class="w-11/12 mx-auto ">
+            <!-- margin both side  -->
+            <div class="flex items-center justify-between border-b-2 border-gray-400 w-11/12 clg:w-full fixed clg:static clg:inline-flex  w-11/12 z-10 bg-secblue">
+                <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Navbar @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+                <img src="./assets/imgs/Group 273.svg" alt="logo" class="w-32">
+                <ul class="homeul hidden clg:flex gap-10">
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px] "><a
+                            href="homepage.html">Home</a></li>
+                    <li class="home hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px] underline underline-offset-[14px]"><a
+                            href="plan.html">Plans</a></li>
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px]"><a
+                            href="#">Help</a></li>
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[14px]"><a
+                            href="#">Contacts</a></li>
+                </ul>
+                <ul class="logoutul hidden clg:flex gap-8 ">
+                    <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[15px]"><a
+                            href="postinglist.html">Posting List</a></li>
+                    <li><a href="#">login</a></li>
+                    <li class="bg-terablue box-content px-2 rounded-lg py-1 font-semibold text-blue text-sm "><a href="#">Signup  <i class="ml-1 fa-solid fa-caret-down bg-white rounded-full px-1"></i></a></li>
+
+                </ul>
+                <button class="text-black  clg:hidden" onclick="togglesidebar()"><i
+                    class="fa-solid fa-bars fa-xl"></i></button>
+
+
+            </div>
+            <div class="text-blue absolute top-28 w-11/12 ">
+                <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ center text @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+                 <h1 class="text-3xl csm:text-5xl font-bold">Listings</h1>
+                 <p class="text-lg csm:text-2xl">Easy Process, Residental And Commerical <br> Properties, Free Listings!</p>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="w-11/12 mx-auto mb-10 text-center mt-8">
+            <button class="py-3 bg-terblue  font-semibold w-full csm:w-64 my-4 rounded-lg mr-2 block  csm:inline" onclick="window.location.href='plan.html'">Property Management</button>
+            <button class="py-3 bg-blue text-white font-semibold w-full csm:w-64 rounded-lg block  csm:inline" onclick="window.location.href='planlisting.html'">Listings</button>
+
+            <div class="mt-8 grid grid-rows-4 sm:grid-rows-2 md:grid-rows-1 grid-flow-col gap-4 text-left">
+                <!--@@@@@@@@@@@@@@@@@@ grid div @@@@@@@@@@@@@@@@@@@@@@@@@@-->
+                 <div class="bg-terblue p-2 text-blue relative text-center sm:my-auto rounded-xl">
+                    <h1 class="text-2xl font-semibold">Free(Default)</h1>
+                    <h1 class="text-4xl font-bold">Post 2 Listings <br> for free</h1>
+                 </div>
+                 <div class="bg-terblue p-2 text-blue relative text-center rounded-xl">
+                   <h1 class="text-2xl font-semibold">Single Listing</h1>
+                   <h1 class="my-3 text-4xl font-bold">$10</h1>
+                   <h1 class="font-semibold">(One Month Only)</h1>
+                   <h1 class="font-semibold">Featured Listing</h1>
+                   <h1 class="font-semibold">Priority Messaging</h1>
+                   <button class="my-2 py-2 px-20 rounded-3xl bg-terablue" onclick="window.location.href='planlisting.html'">Select</button>
+                 </div>
+                 <div class="bg-terblue p-2 text-blue relative text-center rounded-xl">
+                    <h1 class="text-2xl font-semibold" >Unlimited</h1>
+                    <h1 class="my-3 text-4xl font-bold">$499</h1>
+                    <h1 class="font-semibold">(Billed Annually)</h1>
+                    <h1 class="font-semibold">Featured Listing</h1>
+                    <h1 class="font-semibold">Priority Messaging</h1>
+                    <button class="my-2 py-2 px-20 rounded-3xl bg-terablue" onclick="window.location.href='planlisting.html'">Select</button>
+                  </div>
+                  <div class="bg-terblue p-2 text-blue relative text-center rounded-xl">
+                    <h1 class="text-2xl font-semibold">Pro Unlimited</h1>
+                    <h1 class="text-4xl font-bold">$799</h1>
+                    <h1 class="font-semibold">(Billed Annually)</h1>
+                    <h1  class="font-semibold">Featured Listing</h1>
+                    <h1 class="font-semibold">Priority Messaging</h1>
+                    <h1 class="font-semibold">Sponsored Banners</h1>
+                    <button class="my-2 py-2 px-20 rounded-3xl bg-terablue" onclick="window.location.href='planlisting.html'">Select</button>
+                  </div>
+        
+            </div>
+    
+        </div>
+        
+        <footer class=" bg-blue ">
+            <div class="pt-10 w-11/12 mx-auto text-white pb-8 flex justify-between  flex-wrap gap-4">
+                <span>
+
+                    <img src="./assets/imgs/footerlogo.svg" alt="Logo" class="w-48">
+                    <h1 class="text-2xl font-semibold mb-2">The Place To List</h1>
+                    <img src="./assets/imgs/facebook.svg" alt="" class="w-8 inline mr-2 cursor-pointer ">
+                    <img src="./assets/imgs/twitter.svg" alt="" class="w-8 inline mr-2 cursor-pointer">
+                    <i class="fa-brands fa-instagram rounded-full p-2 outline outline-1 mr-2 cursor-pointer"></i>
+                    <img src="./assets/imgs/p.svg" alt="" class="w-8 inline cursor-pointer">
+                    
+                </span>
+                <span>
+                    <img src="./assets/imgs/googleplay.png" alt="" class="w-28 inline mr-4">
+                    <img src="./assets/imgs/appstore.png" alt="" class="w-28 inline ">
+                    <h1 class="mt-4 text-lg">Terms & Conditions Privacy Policy</h1>
+                    <p class="mt-2 text-slate-500">Copyright © 2024 EstatePie LLC</p>
+
+
+                </span>
+
+            </div>
+        </footer>
+    
+</body>
+
+</html>
