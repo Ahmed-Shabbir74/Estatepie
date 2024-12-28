@@ -125,6 +125,5 @@ function togglesidebar() {
 function showdetails(){
   const x=document.querySelector('.deta');
   x.classList.toggle('hidden');
-  // x.classList.toggle('gap-4');
   // x.classList.toggle('z-50');
 }
