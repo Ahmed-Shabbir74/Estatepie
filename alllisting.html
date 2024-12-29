@@ -17,37 +17,39 @@
                 <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Navbar @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
                 <img src="./assets/imgs/Group 273.svg" alt="logo" class="w-32">
-                <ul class="flex gap-8">
+                <ul class="logoutul hidden csm:flex gap-8 ">
                     <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[15px]"><a
                             href="postinglist.html">Posting List</a></li>
                     <li class="bg-terablue box-content px-2 rounded-lg py-1 font-semibold text-blue text-sm "><a href="homepage.html">Get Started</a></li>
 
                 </ul>
+                <button class="text-black  csm:hidden" onclick="togglesidebar1()"><i
+                    class="fa-solid fa-bars fa-xl"></i></button>
 
             </div>
             <div class="text-blue mt-16 ">
                 <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ center text @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
                 <button class="clg:hidden py-2 bg-terablue font-semibold px-10 rounded-lg mr-2" onclick="showdetails()">Details</button>
-                <div class="hidden deta clg:grid grid-cols-9 p-2 gap-4 w-10/12 rounded-lg bg-white mb-10 ">
+                <div class="hidden details clg:grid grid-cols-9 p-2 gap-2 w-10/12 rounded-lg bg-white mb-10 ">
                    
-                    <div class="bg-secblue col-span-2 rounded-md text-center  px-1 py-2">
+                    <div class="bg-secblue col-span-2 rounded-md text-center  px-1 py-2 my-2 clg:my-0">
                         <h1 class="text-lg font-semibold">Buy</h1>
                         <span class="flex justify-end items-center gap-x-2">
                             <i class="fa-solid fa-angle-down justify-self-end self-end fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow"></i>
                         </span>
                     </div>
-                    <div class=" bg-secblue col-span-3 rounded-md px-1">
+                    <div class=" bg-secblue col-span-3 rounded-md px-1 my-2 clg:my-0">
                         <!-- <h1 class="text-lg font-semibold">Location</h1> -->
                         <input type="text" class="w-full h-10 placeholder:text-black placeholder:text-top  bg-secblue outline-none font-semibold" placeholder="Location">
                     </div>
-                    <div class="bg-secblue col-span-2 rounded-md px-1 ">
+                    <div class="bg-secblue col-span-2 rounded-md px-1 my-2 clg:my-0">
                         <h1 class="text-lg font-semibold">Property Type</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">Homes</h1>
                             <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="document.querySelector('.dropdownP').classList.toggle('hidden');"></i>
                         </span>
                     </div>
-                    <div class="bg-secblue col-span-2 rounded-md px-1">
+                    <div class="bg-secblue col-span-2 rounded-md px-1 my-2 clg:my-0">
                         <h1 class="text-lg font-semibold">Area</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">0</h1>
@@ -57,7 +59,7 @@
                         
                        
                     </div>
-                    <div class="bg-secblue col-span-3 rounded-md px-1">
+                    <div class="bg-secblue col-span-3 rounded-md px-1 my-2 clg:my-0">
                         <h1 class="text-lg font-semibold">Price</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">0</h1>
@@ -66,7 +68,7 @@
                         </span>
                        
                     </div>
-                    <div class="bg-secblue rounded-md px-1">
+                    <div class="bg-secblue rounded-md px-1 my-2 clg:my-0">
                         <h1 class="text-lg font-semibold">BEDS</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">All</h1>
@@ -74,7 +76,7 @@
                         </span>
                        
                     </div>
-                    <div class="bg-secblue rounded-md px-1">
+                    <div class="bg-secblue rounded-md px-1 my-2 clg:my-0">
                         <h1 class="text-lg font-semibold">BATHS</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">All</h1>
@@ -82,10 +84,10 @@
                         </span>
                       
                     </div>
-                    <div class="bg-secblue col-span-2 rounded-md px-1">
+                    <div class="bg-secblue col-span-2 rounded-md px-1 my-2 clg:my-0">
                         <h1 class="text-lg font-semibold">KEYWORD</h1>
                     </div>
-                    <div class="bg-secblue col-span-2 rounded-md px-1">
+                    <div class="bg-secblue col-span-2 rounded-md px-1 my-2 clg:my-0">
                         <h1 class="text-lg font-semibold">MORE OPTIONS</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">0 Selected</h1>
@@ -95,7 +97,7 @@
                  </div>
                 
 
-                <button class="py-2 bg-terablue font-semibold px-10 rounded-lg mr-2" onclick="window.location.href='alllisting.html'">All Listing</button>
+                <button class="py-2 bg-terablue font-semibold px-10 rounded-lg mr-2 my-2" onclick="window.location.href='alllisting.html'">All Listing</button>
                 <button class="py-2 bg-terblue font-semibold px-10 rounded-lg" onclick="window.location.href='featuredlisting.html'">Featured Listing</button>
             </div>
         
@@ -115,19 +117,20 @@
                         <button class="bg-white py-1 px-2 rounded-md absolute right-4 bottom-4">1 Year Ago</button>
 
                     </div>
-                   
-
-                    <h1 class="text-xl font-semibold">Testing Commerical store</h1>
-                    <h1 class="text-lg font-semibold"> <span class="text-xl font-bold"> $100 /</span> Sale</h1>
-                    <p class="font-semibold mb-1"> <i class="fa-solid fa-location-dot bg-white py-1 px-2 rounded" ></i> TH. 7 FL,3R Block 3 gulshan-e-Iqbal.</p>
-                    <ul class="flex flex-wrap gap-2 mb-2">
-                        <li class="border-r-2 px-2"><i class="fa-solid fa-bed"></i> 4 Beds</li>
-                        <li class="border-r-2 px-2"><i class="fa-solid fa-bath"></i> 3 Baths</li>
-                        <li><i class="fa-solid fa-chart-area"></i> Area 50 sq.Ft</li>
-                    </ul>
-                    <button class="bg-blue text-white px-2 py-1 rounded-lg"><i class="fa-solid fa-phone  text-blue bg-white rounded-full p-1"></i> Call</button>
-                    <button class="bg-terablue  px-2 py-1 rounded-lg"><i class="fa-solid fa-message  text-white bg-blue rounded-full p-[5px]"></i> Chat</button>
-                    <button class="bg-white px-2 py-1 rounded-lg "><i class="fa-brands fa-square-whatsapp text-white bg-blue rounded-full p-[5px]"></i> WhatsApp</button>
+                    <div class="cursor-pointer " onclick="window.location.href='description.html'">
+                        
+                        <h1 class="text-xl font-semibold">Testing Commerical store</h1>
+                        <h1 class="text-lg font-semibold"> <span class="text-xl font-bold"> $100 /</span> Sale</h1>
+                        <p class="font-semibold mb-1"> <i class="fa-solid fa-location-dot bg-white py-1 px-2 rounded" ></i> TH. 7 FL,3R Block 3 gulshan-e-Iqbal.</p>
+                        <ul class="flex flex-wrap gap-2 mb-2">
+                            <li class="border-r-2 px-2"><i class="fa-solid fa-bed"></i> 4 Beds</li>
+                            <li class="border-r-2 px-2"><i class="fa-solid fa-bath"></i> 3 Baths</li>
+                            <li><i class="fa-solid fa-chart-area"></i> Area 50 sq.Ft</li>
+                        </ul>
+                        <button class="bg-blue text-white px-2 py-1 rounded-lg"><i class="fa-solid fa-phone  text-blue bg-white rounded-full p-1"></i> Call</button>
+                        <button class="bg-terablue  px-2 py-1 rounded-lg"><i class="fa-solid fa-message  text-white bg-blue rounded-full p-[5px]"></i> Chat</button>
+                        <button class="bg-white px-2 py-1 rounded-lg "><i class="fa-brands fa-square-whatsapp text-white bg-blue rounded-full p-[5px]"></i> WhatsApp</button>
+                    </div>
                 </div>
                  <div class="bg-terblue p-2 text-blue ">
                     <div class="relative">
@@ -137,10 +140,12 @@
                         <button class="bg-white py-1 px-2 rounded-md absolute right-4 bottom-4">1 Year Ago</button>
 
                     </div>
-                    <h1 class="text-xl font-semibold">Testing Commerical store</h1>
-                    <h1 class="text-lg font-semibold"> <span class="text-xl font-bold"> $100 /</span> Sale</h1>
-                    <p class="font-semibold mb-1"> <i class="fa-solid fa-location-dot bg-white py-1 px-2 rounded" ></i> TH. 7 FL,3R Block 3 gulshan-e-Iqbal.</p>
-                    <ul class="flex flex-wrap gap-2 mb-2">
+                    <div  class="cursor-pointer " onclick="window.location.href='description.html'">
+                        
+                        <h1 class="text-xl font-semibold">Testing Commerical store</h1>
+                        <h1 class="text-lg font-semibold"> <span class="text-xl font-bold"> $100 /</span> Sale</h1>
+                        <p class="font-semibold mb-1"> <i class="fa-solid fa-location-dot bg-white py-1 px-2 rounded" ></i> TH. 7 FL,3R Block 3 gulshan-e-Iqbal.</p>
+                        <ul class="flex flex-wrap gap-2 mb-2">
                         <li class="border-r-2 px-2"><i class="fa-solid fa-bed"></i> 4 Beds</li>
                         <li class="border-r-2 px-2"><i class="fa-solid fa-bath"></i> 3 Baths</li>
                         <li><i class="fa-solid fa-chart-area"></i> Area 50 sq.Ft</li>
@@ -148,6 +153,7 @@
                     <button class="bg-blue text-white px-2 py-1 rounded-lg"><i class="fa-solid fa-phone  text-blue bg-white rounded-full p-1"></i> Call</button>
                     <button class="bg-terablue  px-2 py-1 rounded-lg"><i class="fa-solid fa-message  text-white bg-blue rounded-full p-[5px]"></i> Chat</button>
                     <button class="bg-white px-2 py-1 rounded-lg "><i class="fa-brands fa-square-whatsapp text-white bg-blue rounded-full p-[5px]"></i> WhatsApp</button>
+                </div>
                 </div>
                  <div class="bg-terblue p-2 text-blue ">
                     <div class="relative">
@@ -157,17 +163,20 @@
                         <button class="bg-white py-1 px-2 rounded-md absolute right-4 bottom-4">1 Year Ago</button>
 
                     </div>
-                    <h1 class="text-xl font-semibold">Testing Commerical store</h1>
-                    <h1 class="text-lg font-semibold"> <span class="text-xl font-bold"> $100 /</span> Sale</h1>
-                    <p class="font-semibold mb-1"> <i class="fa-solid fa-location-dot bg-white py-1 px-2 rounded" ></i> TH. 7 FL,3R Block 3 gulshan-e-Iqbal.</p>
-                    <ul class="flex flex-wrap gap-2 mb-2">
-                        <li class="border-r-2 px-2"><i class="fa-solid fa-bed"></i> 4 Beds</li>
-                        <li class="border-r-2 px-2"><i class="fa-solid fa-bath"></i> 3 Baths</li>
-                        <li><i class="fa-solid fa-chart-area"></i> Area 50 sq.Ft</li>
-                    </ul>
-                    <button class="bg-blue text-white px-2 py-1 rounded-lg"><i class="fa-solid fa-phone  text-blue bg-white rounded-full p-1"></i> Call</button>
-                    <button class="bg-terablue  px-2 py-1 rounded-lg"><i class="fa-solid fa-message  text-white bg-blue rounded-full p-[5px]"></i> Chat</button>
-                    <button class="bg-white px-2 py-1 rounded-lg "><i class="fa-brands fa-square-whatsapp text-white bg-blue rounded-full p-[5px]"></i> WhatsApp</button>
+                    <div  class="cursor-pointer " onclick="window.location.href='description.html'">
+
+                        <h1 class="text-xl font-semibold">Testing Commerical store</h1>
+                        <h1 class="text-lg font-semibold"> <span class="text-xl font-bold"> $100 /</span> Sale</h1>
+                        <p class="font-semibold mb-1"> <i class="fa-solid fa-location-dot bg-white py-1 px-2 rounded" ></i> TH. 7 FL,3R Block 3 gulshan-e-Iqbal.</p>
+                        <ul class="flex flex-wrap gap-2 mb-2">
+                            <li class="border-r-2 px-2"><i class="fa-solid fa-bed"></i> 4 Beds</li>
+                            <li class="border-r-2 px-2"><i class="fa-solid fa-bath"></i> 3 Baths</li>
+                            <li><i class="fa-solid fa-chart-area"></i> Area 50 sq.Ft</li>
+                        </ul>
+                        <button class="bg-blue text-white px-2 py-1 rounded-lg"><i class="fa-solid fa-phone  text-blue bg-white rounded-full p-1"></i> Call</button>
+                        <button class="bg-terablue  px-2 py-1 rounded-lg"><i class="fa-solid fa-message  text-white bg-blue rounded-full p-[5px]"></i> Chat</button>
+                        <button class="bg-white px-2 py-1 rounded-lg "><i class="fa-brands fa-square-whatsapp text-white bg-blue rounded-full p-[5px]"></i> WhatsApp</button>
+                    </div>
                   
                 </div>
             
@@ -198,7 +207,7 @@
 
             </div>
         </footer>
-        <div class="dropdown absolute top-64 left-20 w-72 bg-white text-center p-4 shadow shadow-slate-300 hidden">
+        <div class="dropdown absolute top-[15.5rem] left-20 w-72 bg-white text-center p-4 shadow shadow-slate-300 hidden">
             <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
             <h1 class="text-center text-xl font-bold update">Price</h1>
             <div class="flex items-center justify-between my-2 ">
@@ -223,7 +232,7 @@
 
 
 
-    <div class="dropdownB absolute top-64  left-[23.8rem] w-24 bg-white text-center p-4 shadow shadow-slate-300 hidden ">
+    <div class="dropdownB absolute top-[15.5rem]  left-[23.8rem] w-24 bg-white text-center p-4 shadow shadow-slate-300 hidden ">
         <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
         <ul>
             <li class="border-b-2"><a href="#">All</a></li>

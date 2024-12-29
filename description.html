@@ -17,12 +17,14 @@
                 <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Navbar @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
                 <img src="./assets/imgs/Group 273.svg" alt="logo" class="w-32">
-                <ul class="flex gap-8">
+                <ul class="logoutul hidden csm:flex gap-8">
                     <li class="hover:underline decoration-8 decoration-blue  hover:underline-offset-[15px]"><a
                             href="postinglist.html">Posting List</a></li>
                     <li class="bg-terablue box-content px-2 rounded-lg py-1 font-semibold text-blue text-sm "><a href="homepage.html">Get Started</a></li>
 
                 </ul>
+                <button class="text-black  csm:hidden" onclick="togglesidebar1()"><i
+                    class="fa-solid fa-bars fa-xl"></i></button>
 
             </div>
            
@@ -49,7 +51,7 @@
           
 
         </div>
-        <img src="./assets/imgs/dh0.png" alt=" image" class="w-full rounded-2xl bg-contain">
+        <img src="./assets/imgs/dh0.png" alt=" image" class="w-full rounded-2xl bg-contain my-2">
         <ul class="flex justify-center gap-8 py-2  text-xl flex-wrap ">
             <li class="border-r-2 px-4 ">5 Beds <i class="fa-solid fa-bed block text-center"></i></li>
             <li class="border-r-2 px-4">4 Baths <i class="fa-solid fa-bath block text-center"></i></li>
@@ -86,7 +88,7 @@
             </div>
            
         </div>
-        <h1 class="text-3xl font-semibold">Amenities</h1>
+        <h1 class="text-3xl font-semibold my-2">Amenities</h1>
         <div class="flex flex-col gap-3">
 
             <div class="flex gap-6 flex-wrap">
@@ -112,8 +114,8 @@
         <button class="bg-terblue px-6 py-3 rounded-lg my-2"><i class="fa-brands fa-square-whatsapp text-white bg-blue rounded-full p-[5px]"></i> WhatsApp</button>
 
     </div>
-    <h1 class="text-3xl font-semibold">Similar Properties</h1>
-    <div class="grid grid-cols-1 csm:grid-cols-2 md:grid-cols-3 clg:grid-cols-4 gap-4 my-2 ">
+    <h1 class="text-3xl font-semibold ">Similar Properties</h1>
+    <div class="grid grid-cols-1 csm:grid-cols-2 md:grid-cols-3 clg:grid-cols-4 gap-4 my-4 ">
         <div class="bg-terblue p-2 rounded-xl">
             <img src="./assets/imgs/dhs1.png" alt="house image">
             <h1 class="font-semibold text-2xl">SkyScrapper Flats</h1>
@@ -148,7 +150,7 @@
 
         </div>
         
-        <footer class=" bg-blue">
+        <footer class=" bg-blue ">
             <div class="pt-10 w-11/12 mx-auto text-white pb-8 flex justify-between flex-wrap gap-4">
                 <span>
 

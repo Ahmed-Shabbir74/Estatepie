@@ -122,8 +122,24 @@ function togglesidebar() {
   z.classList.toggle('animate-fall-down');
   // z.classList.toggle('flex-col');
 }
+function togglesidebar1() {
+
+  const z= document.querySelector('.logoutul');
+ 
+
+  z.classList.toggle('w-11/12');
+  z.classList.toggle('flex-col');
+  z.classList.toggle('hidden');
+  z.classList.toggle('absolute');
+  z.classList.toggle('top-14');
+  z.classList.toggle('gap-4');
+  z.classList.toggle('bg-seca');
+  z.classList.toggle('animate-fall-down');
+  // z.classList.toggle('flex-col');
+}
 function showdetails(){
-  const x=document.querySelector('.deta');
+  const x=document.querySelector('.details');
   x.classList.toggle('hidden');
-  // x.classList.toggle('z-50');
+  x.classList.toggle('absolute');
+  x.classList.toggle('z-10');
 }
