@@ -42,47 +42,137 @@
                         <!-- <h1 class="text-lg font-semibold">Location</h1> -->
                         <input type="text" class="w-full h-10 placeholder:text-black placeholder:text-top  bg-secblue outline-none font-semibold" placeholder="Location">
                     </div>
-                    <div class="bg-secblue col-span-2 rounded-md px-1 my-2 clg:my-0">
+                    <div class="bg-secblue col-span-2 rounded-md px-1 my-2 clg:my-0 relative">
                         <h1 class="text-lg font-semibold">Property Type</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">Homes</h1>
                             <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="document.querySelector('.dropdownP').classList.toggle('hidden');"></i>
                         </span>
+                       <!--         dropdown             -->
+                        <div class="dropdownP absolute top-12 right-1 z-10  w-96 bg-white p-2 shadow shadow-slate-600 hidden">
+                            <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
+                            <div class="grid grid-cols-2 gap-2 gap-y-4 text-center">
+                                <div>
+                                    <button class="rbtn underline  decoration-2 underline-offset-4 decoration-cyan-600 hover:text-black" onclick="fun3()">Residental</button>
+                                </div>
+                                <div>
+                                    <button class="cbtn text-gray-500 hover:text-black decoration-cyan-600 decoration-2 underline-offset-4" onclick="fun2()">Commerical</button>
+                                </div>
+                                <div class="outline outline-1"><h1>Home</h1></div>
+                                <div class="outline outline-1"><h1>Flat</h1></div>
+                                <div class="outline outline-1"><h1>PentHouse</h1></div>
+                                <div class="outline outline-1"><h1>Room</h1></div>
+                            </div>
+                        </div>
+                        <!-- ############# -->
+
+
                     </div>
-                    <div class="bg-secblue col-span-2 rounded-md px-1 my-2 clg:my-0">
+                    <div class="bg-secblue col-span-2 rounded-md px-1 my-2 clg:my-0 relative">
                         <h1 class="text-lg font-semibold">Area</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">0</h1>
                             <h1 class="text-md font-semibold">To Any</h1>
-                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="fun()"></i>
+                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="document.querySelector('.dropdowna').classList.toggle('hidden');"></i>
                         </span>
-                        
+                          <!-- dropdown  -->
+                          <div class="dropdowna absolute top-12 right-1 z-10 w-72 bg-white text-center p-4 shadow shadow-slate-300 hidden">
+                            <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
+                            <h1 class="text-center text-xl font-bold update">Area</h1>
+                            <div class="flex items-center justify-between my-2 ">
+                              <div class="w-4 h-4 bg-terablue rounded-full"></div>
+                              <div class="flex-1 h-2 bg-terablue mx-[1px]"></div>
+                              <div class="w-4 h-4 bg-terablue rounded-full"></div>
+                            </div>
+                            <div class="my-2">
+                                <label for="min" class="block text-left my-1 text-lg update">Min Area</label>
+                                <input type="text" class="w-full h-8 outline outline-1 p-2" placeholder="Enter Min">
+                            </div>
+                            <div class="my-2">
+                                <label for="max" class="block text-left my-1 text-lg update">Max Area</label>
+                                <input type="text" class="w-full h-8 outline outline-1 p-2" placeholder="Enter Max">
+                            </div>
+                            <button class=" bg-blue text-white px-12 py-2 rounded " onclick="window.location.href='alllisting.html'">Done</button>
+                    </div>
+                    <!--              -->
                        
                     </div>
-                    <div class="bg-secblue col-span-3 rounded-md px-1 my-2 clg:my-0">
+                    <div class="bg-secblue col-span-3 rounded-md px-1 my-2 clg:my-0 relative">
                         <h1 class="text-lg font-semibold">Price</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">0</h1>
                             <h1 class="text-md font-semibold">To Any</h1>
                             <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="document.querySelector('.dropdown').classList.toggle('hidden');"></i>
                         </span>
+
+                         <!-- dropdown  -->
+                        <div class="dropdown absolute top-12 right-1 z-10 w-72 bg-white text-center p-4 shadow shadow-slate-300 hidden">
+                            <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
+                            <h1 class="text-center text-xl font-bold update">Price</h1>
+                            <div class="flex items-center justify-between my-2 ">
+                              <div class="w-4 h-4 bg-terablue rounded-full"></div>
+                              <div class="flex-1 h-2 bg-terablue mx-[1px]"></div>
+                              <div class="w-4 h-4 bg-terablue rounded-full"></div>
+                            </div>
+                            <div class="my-2">
+                                <label for="min" class="block text-left my-1 text-lg update">Min Price</label>
+                                <input type="text" class="w-full h-8 outline outline-1 p-2" placeholder="Enter Min">
+                            </div>
+                            <div class="my-2">
+                                <label for="max" class="block text-left my-1 text-lg update">Max Price</label>
+                                <input type="text" class="w-full h-8 outline outline-1 p-2" placeholder="Enter Max">
+                            </div>
+                            <button class=" bg-blue text-white px-12 py-2 rounded " onclick="window.location.href='alllisting.html'">Done</button>
+                    </div>
+                    <!--              -->
                        
                     </div>
-                    <div class="bg-secblue rounded-md px-1 my-2 clg:my-0">
+                    <div class="bg-secblue rounded-md px-1 my-2 clg:my-0 relative">
                         <h1 class="text-lg font-semibold">BEDS</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">All</h1>
-                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="document.querySelector('.dropdownB').classList.toggle('hidden');"></i>
+                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="document.querySelector('.dropdownB1').classList.toggle('hidden');"></i>
                         </span>
+                        <!-- dropdown  -->
+                        <div class="dropdownB1 absolute top-12  right-1 z-10 w-24 bg-white text-center p-4 shadow shadow-slate-300 hidden ">
+                            <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
+                            <ul>
+                                <li class="border-b-2"><a href="#">All</a></li>
+                                <li class="border-b-2"><a href="#">Studio</a></li>
+                                <li class="border-b-2"><a href="#">1</a></li>
+                                <li class="border-b-2"><a href="#">2</a></li>
+                                <li class="border-b-2"><a href="#">3</a></li>
+                                <li class="border-b-2"><a href="#">4</a></li>
+                                <li class="border-b-2"><a href="#">5</a></li>
+                                <li class="border-b-2"><a href="#">6</a></li>
+                            </ul>
+                           
+                        </div>
+                        <!--  -->
                        
                     </div>
-                    <div class="bg-secblue rounded-md px-1 my-2 clg:my-0">
+                    <div class="bg-secblue rounded-md px-1 my-2 clg:my-0 relative">
                         <h1 class="text-lg font-semibold">BATHS</h1>
                         <span class="flex justify-between items-center gap-x-2">
                             <h1 class="text-md font-semibold">All</h1>
-                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer" onclick="fun1()"></i>
+                            <i class="fa-solid fa-angle-down fa-sm bg-white rounded-xl px-[1px] py-[7px] shadow-slate-800 shadow cursor-pointer"  onclick="document.querySelector('.dropdownB2').classList.toggle('hidden');"></i>
                         </span>
-                      
+                       <!-- dropdown  -->
+                      <div class="dropdownB2 absolute top-12  right-1 w-24 bg-white text-center p-4 shadow shadow-slate-300 hidden ">
+                            <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
+                            <ul>
+                                <li class="border-b-2"><a href="#">All</a></li>
+                                <li class="border-b-2"><a href="#">Studio</a></li>
+                                <li class="border-b-2"><a href="#">1</a></li>
+                                <li class="border-b-2"><a href="#">2</a></li>
+                                <li class="border-b-2"><a href="#">3</a></li>
+                                <li class="border-b-2"><a href="#">4</a></li>
+                                <li class="border-b-2"><a href="#">5</a></li>
+                                <li class="border-b-2"><a href="#">6</a></li>
+                            </ul>
+                           
+                        </div>
+                        <!--            -->
                     </div>
                     <div class="bg-secblue col-span-2 rounded-md px-1 my-2 clg:my-0">
                         <h1 class="text-lg font-semibold">KEYWORD</h1>
@@ -207,61 +297,13 @@
 
             </div>
         </footer>
-        <div class="dropdown absolute top-[15.5rem] left-20 w-72 bg-white text-center p-4 shadow shadow-slate-300 hidden">
-            <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
-            <h1 class="text-center text-xl font-bold update">Price</h1>
-            <div class="flex items-center justify-between my-2 ">
-              <div class="w-4 h-4 bg-terablue rounded-full"></div>
-              <div class="flex-1 h-2 bg-terablue mx-[1px]"></div>
-              <div class="w-4 h-4 bg-terablue rounded-full"></div>
-            </div>
-            <div class="my-2">
-                <label for="min" class="block text-left my-1 text-lg update">Min Price</label>
-                <input type="text" class="w-full h-8 outline outline-1 p-2" placeholder="Enter Min">
-            </div>
-            <div class="my-2">
-                <label for="max" class="block text-left my-1 text-lg update">Max Price</label>
-                <input type="text" class="w-full h-8 outline outline-1 p-2" placeholder="Enter Max">
-            </div>
-            <button class=" bg-blue text-white px-12 py-2 rounded " onclick="window.location.href='alllisting.html'">Done</button>
-
-  
-        
-     
-    </div>
+      
 
 
 
-    <div class="dropdownB absolute top-[15.5rem]  left-[23.8rem] w-24 bg-white text-center p-4 shadow shadow-slate-300 hidden ">
-        <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
-        <ul>
-            <li class="border-b-2"><a href="#">All</a></li>
-            <li class="border-b-2"><a href="#">Studio</a></li>
-            <li class="border-b-2"><a href="#">1</a></li>
-            <li class="border-b-2"><a href="#">2</a></li>
-            <li class="border-b-2"><a href="#">3</a></li>
-            <li class="border-b-2"><a href="#">4</a></li>
-            <li class="border-b-2"><a href="#">5</a></li>
-            <li class="border-b-2"><a href="#">6</a></li>
-        </ul>
-       
-    </div>
+   
 
-    <div class="dropdownP absolute top-[11.3rem] left-[25.8rem] w-96 bg-white p-2 shadow shadow-slate-600 hidden">
-        <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
-        <div class="grid grid-cols-2 gap-2 gap-y-4 text-center">
-            <div>
-                <button class="rbtn underline  decoration-2 underline-offset-4 decoration-cyan-600 hover:text-black" onclick="fun3()">Residental</button>
-            </div>
-            <div>
-                <button class="cbtn text-gray-500 hover:text-black decoration-cyan-600 decoration-2 underline-offset-4" onclick="fun2()">Commerical</button>
-            </div>
-            <div class="outline outline-1"><h1>Home</h1></div>
-            <div class="outline outline-1"><h1>Flat</h1></div>
-            <div class="outline outline-1"><h1>PentHouse</h1></div>
-            <div class="outline outline-1"><h1>Room</h1></div>
-        </div>
-    </div>
+   
      
 
 </body>

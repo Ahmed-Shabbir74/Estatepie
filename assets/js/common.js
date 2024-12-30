@@ -41,40 +41,40 @@ tailwind.config = {
       },
     },
   }
- function fun() {
-  const x= document.querySelector('.dropdown');
-  x.classList.toggle('hidden');
-  x.classList.toggle('left-20');
-  x.classList.toggle('top-64');
-  x.classList.toggle('top-[11.5rem]');
-  x.classList.toggle('right-[15.7rem]');
-  const y= document.getElementsByClassName('update');
-  var cha=y[0].innerHTML;
+//  function fun() {
+//   const x= document.querySelector('.dropdown');
+//   x.classList.toggle('hidden');
+//   x.classList.toggle('left-20');
+//   x.classList.toggle('top-64');
+//   x.classList.toggle('top-[11.5rem]');
+//   x.classList.toggle('right-[15.7rem]');
+//   const y= document.getElementsByClassName('update');
+//   var cha=y[0].innerHTML;
   
 
-  if(cha=="Price"){
-    y[0].innerHTML="Area";
-    y[1].innerHTML ="Min Area";
-    y[2].innerHTML="Max Area";
-  }
- else{
-    y[0].innerHTML="Price";
-    y[1].innerHTML ="Min Price";
-    y[2].innerHTML="Max Price";
-  }
+//   if(cha=="Price"){
+//     y[0].innerHTML="Area";
+//     y[1].innerHTML ="Min Area";
+//     y[2].innerHTML="Max Area";
+//   }
+//  else{
+//     y[0].innerHTML="Price";
+//     y[1].innerHTML ="Min Price";
+//     y[2].innerHTML="Max Price";
+//   }
 
-}
+// }
   
-function fun1(){
-  const z=document.querySelector('.dropdownB');
-  z.classList.toggle('hidden');
-  z.classList.toggle('left-[23.8rem]');
-  z.classList.toggle('left-[30.5rem]');
+// function fun1(){
+//   const z=document.querySelector('.dropdownB');
+//   z.classList.toggle('hidden');
+//   z.classList.toggle('left-[23.8rem]');
+//   z.classList.toggle('left-[30.5rem]');
 
 
-}
+// }
 function fun2(){
-  const y=document.querySelector('.dropdownP');
+  // const y=document.querySelector('.dropdownP');
   const a=document.querySelector('.rbtn');
   const b= document.querySelector('.cbtn');
   a.classList.remove('underline');
@@ -86,7 +86,7 @@ function fun2(){
 
 }
 function fun3(){
-  const y=document.querySelector('.dropdownP');
+  // const y=document.querySelector('.dropdownP');
   const a=document.querySelector('.rbtn');
   const b= document.querySelector('.cbtn');
   b.classList.remove('underline');
