@@ -143,3 +143,16 @@ function showdetails(){
   x.classList.toggle('absolute');
   x.classList.toggle('z-10');
 }
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+slides[n].classList.remove("hidden");
+    for(i=0;i<4;i++){
+    if(i==n){
+        continue;
+       }
+     slides[i].classList.add("hidden");
+     }
+}
+

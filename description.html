@@ -31,7 +31,7 @@
         
         </div>
         </div>
-        <div class="w-11/12 mx-auto">
+        <div class="w-11/12 mx-auto relative">
             <!-- center content -->
             <div>
             <h1 class="text-4xl my-2"> Liberty Society Estate</h1>
@@ -50,20 +50,60 @@
             </div>
           
 
-        </div>
-        <img src="./assets/imgs/dh0.png" alt=" image" class="w-full rounded-2xl bg-contain my-2">
-        <ul class="flex justify-center gap-8 py-2  text-xl flex-wrap ">
+         </div>
+         <div class="relative">
+            <i class="fa-solid fa-ellipsis-vertical absolute right-6 top-8 py-2 px-4 rounded-3xl bg-white cursor-pointer" onclick="document.querySelector('.dropdown').classList.toggle('hidden');"></i>
+            <!-- <img src="./assets/imgs/dh0.png" alt=" image" class="w-full rounded-2xl bg-contain my-2"> -->
+         
+                <!-- @@@@@@@@@@@@@@@@@@@@@@@ slider code @@@@@@@@@@@@@@@@@@@@@ -->
+                <div class="mySlides">
+                  <img src="./assets/imgs/dh0.png" class="w-full rounded-2xl bg-contain my-2" >
+                </div>
+                <div class="mySlides hidden ">
+                  <img src="./assets/imgs/dh1.png" class="w-full rounded-2xl bg-contain my-2">
+                </div>
+                <div class="mySlides hidden w-full ">
+                  <img src="./assets/imgs/dh2.png" class="w-full rounded-2xl bg-contain my-2">
+                </div>
+                <div class="mySlides hidden">
+                  <img src="./assets/imgs/dh3.png" class="w-full rounded-2xl bg-contain my-2">
+                </div>
+             
+                <div class="flex absolute bottom-4 w-40 xsm:w-72 csm:w-96 left-[18%] sm:left-[25%] md:left-[30%] p-2 bg-white gap-2 rounded">
+                  <div>
+                    <img class=" cursor-pointer opacity-100 hover:opacity-75" src="./assets/imgs/slider1.png" style="width:100%" onclick="showSlides(0)" >
+                  </div>
+                  <div>
+                    <img class=" cursor-pointer opacity-100 hover:opacity-75" src="./assets/imgs/slider2.png" style="width:100%" onclick="showSlides(1)" >
+                  </div>
+                  <div>
+                    <img class=" cursor-pointer opacity-100 hover:opacity-75" src="./assets/imgs/slider3.png" style="width:100%" onclick="showSlides(2)" >
+                  </div>
+                  <div>
+                    <img class=" cursor-pointer opacity-100 hover:opacity-75" src="./assets/imgs/slider1.png" style="width:100%" onclick="showSlides(3)" >
+                  </div>
+                    
+                 
+                </div>
+            
+         </div>
+         <ul class="dropdown px-2 leading-8 absolute top-40 right-14 rounded-l-xl rounded-b-xl border-2 bg-white shadow-slate-300 shadow-sm hidden">
+            <li class="  border-b-2 border-gray border-dashed text-center p-1"> <i class="fa-solid fa-share-nodes mr-2"></i> Share</li>
+            <li class="  text-center p-1"> <i class="fa-regular fa-heart mr-2"></i> Favorite</li>
+         </ul>
+      
+         <ul class="flex justify-center gap-8 py-2  text-xl flex-wrap ">
             <li class="border-r-2 px-4 ">5 Beds <i class="fa-solid fa-bed block text-center"></i></li>
             <li class="border-r-2 px-4">4 Baths <i class="fa-solid fa-bath block text-center"></i></li>
             <li class="border-r-2 px-4">Area 50 Sq.Ft <i class="fa-solid fa-chart-area block text-center"></i></li>
             <li class=" px-2">Listed By Ahmed <i class="fa-regular fa-user block text-center"></i></li>
-        </ul>
-        <h1 class="text-3xl font-semibold">
+         </ul>
+         <h1 class="text-3xl font-semibold">
             Description
-        </h1>
-        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eius repellendus necessitatibus deleniti mollitia laboriosam doloremque et vitae fuga, recusandae, nobis aperiam iusto earum. Facilis rerum error distinctio veniam blanditiis minima tempora architecto voluptatibus quasi iure nihil iste, eveniet quos aliquid in inventore cum necessitatibus pariatur unde quisquam ipsum. Aliquid provident excepturi tenetur fugiat nulla exercitationem asperiores dolorum facilis eos laudantium, debitis explicabo nobis recusandae est praesentium! Tempore similique labore reprehenderit, culpa et perferendis ipsa sed tempora molestias, delectus totam explicabo placeat nobis sunt necessitatibus repellendus tenetur officia ipsam dicta, eveniet non inventore! Mollitia consectetur labore, tempora obcaecati facere nam.</h1>
-        <h1 class="text-3xl font-semibold">Overview</h1>
-        <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-2 my-2">
+         </h1>
+         <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eius repellendus necessitatibus deleniti mollitia laboriosam doloremque et vitae fuga, recusandae, nobis aperiam iusto earum. Facilis rerum error distinctio veniam blanditiis minima tempora architecto voluptatibus quasi iure nihil iste, eveniet quos aliquid in inventore cum necessitatibus pariatur unde quisquam ipsum. Aliquid provident excepturi tenetur fugiat nulla exercitationem asperiores dolorum facilis eos laudantium, debitis explicabo nobis recusandae est praesentium! Tempore similique labore reprehenderit, culpa et perferendis ipsa sed tempora molestias, delectus totam explicabo placeat nobis sunt necessitatibus repellendus tenetur officia ipsam dicta, eveniet non inventore! Mollitia consectetur labore, tempora obcaecati facere nam.</h1>
+         <h1 class="text-3xl font-semibold">Overview</h1>
+         <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-2 my-2">
             <div class="bg-gray-200 text-center col-span-2 rounded-lg"><h1 class="font-semibold">Multi Units</h1> <h1>Yes</h1></div>
             <div class="bg-gray-200 text-center col-span-2 rounded-lg "><h1 class="font-semibold">Availability Status</h1> <h1>Vacant</h1></div>
             <div class="bg-gray-200 text-center rounded-lg"><h1 class="font-semibold">Broker</h1> <h1>Yes</h1></div>
@@ -75,20 +115,48 @@
         </div>
 
         <div class="bg-terblue p-4">
-            <span class="flex justify-between items-center ">
+            <span class="flex justify-between items-center my-2 ">
                 <h1 class="text-2xl font-semibold">Featured Listings</h1>
-                <h1 class="text-right">View all</h1>
+                <h1 class="text-right font-semibold">View all</h1>
             </span>
             <div class="grid grid-cols-1 sm:grid-cols-2 clg:grid-cols-4 gap-4 text-center font-semibold gap-y-4">
-                <div class="bg-white p-2 rounded-2xl"><img src="./assets/imgs/dh1.png" alt=""><h1 >Presidental Towers</h1></div>
-                <div class="bg-white  p-2 rounded-2xl"><img src="./assets/imgs/dh2.png" alt=""><h1>Presidental Towers</h1></div>
-                <div class="bg-white  p-2 rounded-2xl"><img src="./assets/imgs/dh3.png" alt=""><h1>Presidental Towers</h1></div>
-                <div class="bg-white  p-2 rounded-2xl"><img src="./assets/imgs/dh4.png" alt=""><h1>Presidental Towers</h1></div>
+                <div class="bg-white p-2 rounded-2xl">
+                    <div class="relative">
+                        <img src="./assets/imgs/dh1.png" alt="">
+                        <button class="bg-yellow-400  px-4 rounded-l-xl absolute top-4 right-0">Featured</button>
+                    </div>
+                    <h1 >Presidental Towers</h1>
+                </div>
+                <div class="bg-white  p-2 rounded-2xl">
+                    <div class="relative">
+                        <img src="./assets/imgs/dh2.png" alt="">
+                        <button class="bg-yellow-400  px-4 rounded-l-xl absolute top-4 right-0">Featured</button>
+                    </div>
+                    <h1>Regents Park</h1>
+                </div>
+                <div class="bg-white  p-2 rounded-2xl">
+                    <div class="relative">
+                        <img src="./assets/imgs/dh3.png" alt="">
+                        <button class="bg-yellow-400  px-4 rounded-l-xl absolute top-4 right-0">Featured</button>
+                    </div>
+                    <h1>Arrive Streeterville</h1>
+                </div>
+                <div class="bg-white  p-2 rounded-2xl">
+                    <div class="relative">
+                        <img src="./assets/imgs/dh4.png" alt="">
+                        <button class="bg-yellow-400  px-4 rounded-l-xl absolute top-4 right-0">Featured</button>
+                    </div>
+                    <h1>Exhibit On Superior</h1>
+                </div>
 
             </div>
            
         </div>
-        <h1 class="text-3xl font-semibold my-2">Amenities</h1>
+        <div class="flex justify-between flex-wrap items-center my-2">
+
+            <h1 class="text-3xl font-semibold my-2">Amenities</h1>
+            <button class="px-6 py-2 bg-terablue rounded-lg">Leasing Terms</button>
+        </div>
         <div class="flex flex-col gap-3">
 
             <div class="flex gap-6 flex-wrap">
@@ -117,28 +185,44 @@
     <h1 class="text-3xl font-semibold ">Similar Properties</h1>
     <div class="grid grid-cols-1 csm:grid-cols-2 md:grid-cols-3 clg:grid-cols-4 gap-4 my-4 ">
         <div class="bg-terblue p-2 rounded-xl">
-            <img src="./assets/imgs/dhs1.png" alt="house image">
+            <div class="relative">
+
+                <img src="./assets/imgs/dhs1.png" alt="house image">
+                <i class="fa-regular fa-heart absolute top-2 right-2 bg-white p-2 rounded-3xl cursor-pointer"></i>
+            </div>
             <h1 class="font-semibold text-2xl">SkyScrapper Flats</h1>
             <h1 class="text-2xl text-right font-bold">$199,000</h1>
             <p>3 Bed . 1 Bath . 2474 Sqft</p>
            
         </div>
         <div class="bg-terblue p-2 rounded-xl">
-            <img src="./assets/imgs/dhs2.png" alt="house image">
+            <div class="relative">
+
+                <img src="./assets/imgs/dhs2.png" alt="house image">
+                <i class="fa-regular fa-heart absolute top-2 right-2 bg-white p-2 rounded-3xl cursor-pointer"></i>
+            </div>
             <h1 class="font-semibold text-2xl">Storey Flats</h1>
             <h1 class="text-2xl text-right font-bold">$179,000</h1>
             <p>3 Bed . 1 Bath . 2474 Sqft</p>
            
         </div>
         <div class="bg-terblue p-2 rounded-xl">
-            <img src="./assets/imgs/dhs3.png" alt="house image">
+            <div class="relative">
+
+                <img src="./assets/imgs/dhs3.png" alt="house image">
+                <i class="fa-regular fa-heart absolute top-2 right-2 bg-white p-2 rounded-3xl cursor-pointer"></i>
+            </div>
             <h1 class="font-semibold text-2xl">Villas</h1>
             <h1 class="text-2xl text-right font-bold">$3,600,000</h1>
             <p>3 Bed . 1 Bath . 2474 Sqft</p>
            
         </div>
         <div class="bg-terblue p-2 rounded-xl">
-            <img src="./assets/imgs/dhs4.png" alt="house image">
+            <div class="relative">
+
+                <img src="./assets/imgs/dhs4.png" alt="house image">
+                <i class="fa-regular fa-heart absolute top-2 right-2 bg-white p-2 rounded-3xl cursor-pointer"></i>
+            </div>
             <h1 class="font-semibold text-2xl">Royal Villas</h1>
             <h1 class="text-2xl text-right font-bold">$199,000</h1>
             <p>3 Bed . 1 Bath . 2474 Sqft</p>
@@ -173,63 +257,7 @@
 
             </div>
         </footer>
-        <div class="dropdown absolute top-64 left-20 w-72 bg-white text-center p-4 shadow shadow-slate-300 hidden">
-            <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
-            <h1 class="text-center text-xl font-bold update">Price</h1>
-            <div class="flex items-center justify-between my-2 ">
-              <div class="w-4 h-4 bg-terablue rounded-full"></div>
-              <div class="flex-1 h-2 bg-terablue mx-[1px]"></div>
-              <div class="w-4 h-4 bg-terablue rounded-full"></div>
-            </div>
-            <div class="my-2">
-                <label for="min" class="block text-left my-1 text-lg update">Min Price</label>
-                <input type="text" class="w-full h-8 outline outline-1 p-2" placeholder="Enter Min">
-            </div>
-            <div class="my-2">
-                <label for="max" class="block text-left my-1 text-lg update">Max Price</label>
-                <input type="text" class="w-full h-8 outline outline-1 p-2" placeholder="Enter Max">
-            </div>
-            <button class=" bg-blue text-white px-12 py-2 rounded " onclick="window.location.href='alllisting.html'">Done</button>
-
-  
-        
-     
-    </div>
-
-
-
-    <div class="dropdownB absolute top-64  left-[23.8rem] w-24 bg-white text-center p-4 shadow shadow-slate-300 hidden ">
-        <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
-        <ul>
-            <li class="border-b-2"><a href="#">All</a></li>
-            <li class="border-b-2"><a href="#">Studio</a></li>
-            <li class="border-b-2"><a href="#">1</a></li>
-            <li class="border-b-2"><a href="#">2</a></li>
-            <li class="border-b-2"><a href="#">3</a></li>
-            <li class="border-b-2"><a href="#">4</a></li>
-            <li class="border-b-2"><a href="#">5</a></li>
-            <li class="border-b-2"><a href="#">6</a></li>
-        </ul>
-       
-    </div>
-
-    <div class="dropdownP absolute top-[11.3rem] left-[25.8rem] w-96 bg-white p-2 shadow shadow-slate-600 hidden">
-        <i class="fa-solid fa-caret-up absolute top-[-9px] right-2 text-white"></i>
-        <div class="grid grid-cols-2 gap-2 gap-y-4 text-center">
-            <div>
-                <button class="rbtn underline  decoration-2 underline-offset-4 decoration-cyan-600 hover:text-black" onclick="fun3()">Residental</button>
-            </div>
-            <div>
-                <button class="cbtn text-gray-500 hover:text-black decoration-cyan-600 decoration-2 underline-offset-4" onclick="fun2()">Commerical</button>
-            </div>
-            <div class="outline outline-1"><h1>Home</h1></div>
-            <div class="outline outline-1"><h1>Flat</h1></div>
-            <div class="outline outline-1"><h1>PentHouse</h1></div>
-            <div class="outline outline-1"><h1>Room</h1></div>
-        </div>
-    </div>
-     
-
+    
 </body>
 
 
